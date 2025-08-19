@@ -1,0 +1,8 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "containerEnv": { "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1" },
+
+  "onCreateCommand": "set -e; if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then npm ci; else npm install --package-lock-only && npm ci; fi; npx playwright install --with-deps",
+
+  "postCreateCommand": "npx playwright install --list"
+}

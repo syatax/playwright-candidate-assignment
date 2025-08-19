@@ -2,47 +2,33 @@
 
 ## Overview
 
-**Duration:** 90 minutes maximum  
 **Focus:** Problem-solving approach and technical thinking  
-**Level:** Mid to Senior QA Automation Engineers
 
 This assessment evaluates your debugging skills, testing approach, and technical decision-making using **Playwright** with **TypeScript**.
 
-## Prerequisites
-
-- Node.js 16+
-- Experience with JavaScript/TypeScript
-- Understanding of web automation testing
-
-## Setup (5 minutes)
-
-```bash
-npm install
-npm run install:browsers
-```
 
 ## Assessment Tasks
 
-### Task 1: Debug and Fix (30 minutes)
+### Task 1: Debug and Fix (~15-20 minutes)
 **File:** `tests/broken/intentional-errors.spec.ts`
 
 A test suite with multiple issues preventing execution. Your goal is to identify and resolve all problems.
 
-**Focus:** Demonstrate systematic debugging approach and Playwright knowledge.
+- **Focus:** Demonstrate systematic debugging approach and Playwright knowledge.
 
-### Task 2: Implement Core Test (30 minutes)
+### Task 2: Implement Core Test (~20-30 minutes)
 **File:** `tests/e2e/documentation-test.spec.ts`
 
 Implement **one comprehensive test** that verifies the Playwright documentation homepage functionality.
 
-**Focus:** Show your testing strategy, selector choices, and assertion design.
+- **Focus:** Show your testing strategy, selector choices, and assertion design.
 
-### Task 3: API Testing Strategy (30 minutes)
+### Task 3: API Testing Strategy (~20-30 minutes)
 **File:** `tests/api/posts-api-test.spec.ts`
 
 Implement **one comprehensive API test** for the JSONPlaceholder posts endpoint.
 
-**Focus:** Demonstrate REST API testing knowledge and validation approach.
+- **Focus:** Demonstrate REST API testing knowledge and validation approach.
 
 ## Framework Components
 
@@ -53,8 +39,9 @@ Implement **one comprehensive API test** for the JSONPlaceholder posts endpoint.
 
 ```bash
 npm test                    # Run all tests
-npm test -- --headed        # Run with visible browser
-npm test -- --debug         # Debug mode
+npm test tests/broken/      # Run Task 1
+npm test tests/e2e/         # Run Task 2
+npm test tests/api          # Run Task 3
 ```
 
 ## Evaluation Focus
